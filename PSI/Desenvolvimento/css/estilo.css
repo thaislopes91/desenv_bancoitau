@@ -10,22 +10,73 @@ header .container {
 }
 header #logotipo {
 	position: absolute;
-	width: 157px;
+	width: 150px;
+	top: -10px;
+}
+section h1 {
+	margin-top: 45px;
+	margin-bottom: 0px;
+	font-family: Trebuchet MS;
+}
+section h2 {
+	margin-top: 5px;
+	margin-bottom: 50px;
+	font-family: Trebuchet MS;
+	color: #6C7A89;
+	font-size: 25px;
+	font-style: italic;
+}
+section h4 {
+	font-family: Trebuchet MS;	
+	margin-bottom: 20px;
+}
+section hr {
+	border:#D2D7D3 solid 2px;
+	width: 840px;
+	margin-left: 0;
+}
+.form-group input {
+	width: 80%;
+}
+#snconfirm{
+	color: #D91E18;
+}
+#sconfirm {
+	color: #22A7F0;
+}
+.btn-lg {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.editaexclui {	
+	margin-left: 100px;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+#login, #password {
+	width: 50%;
 }
 #menu li {
 	display: inline-block;
-	margin-top: 50px;
-	text-align: inherit;
+	margin-top: 40px;
 }
 #menu li a {
 	color: #FFF;
 	font-size: 16px;
 	padding: 10px 25px;
 	font-weight: bold;
+	text-align: center;
 }
 #menu li button {
 	font-weight: bold;
 	background-color: #34495E;
+}
+#menu li button a {
+	padding: 10px, 25px;
+	font-size: 14px;
 }
 #banner {
 	width: 100%;
@@ -34,6 +85,7 @@ header #logotipo {
 	background: url("../img/banner.jpg") no-repeat;
 	background-position: 0px -200px;
 	top: -130px;
+	margin-bottom: 0 auto;
 }
 #banner h1 {
 	color: #FFF;
@@ -61,12 +113,16 @@ header #logotipo {
 }
 .title {
 	font-size: 35px;
+	margin-top: 30px;
+	margin-bottom: 10px;
 }
 .subtitle {
 	font-size: 20px;
 } 
 #colunas .row{
-	margin: 50px;
+	/*margin: 50px;*/
+	margin-top: 0 auto;
+	margin-bottom: 110px;
 }
 #colunas .row img{
 	width: 419px;
@@ -75,6 +131,8 @@ header #logotipo {
 #colunas .row p{
 	font-size: 30px;
 	color: #34495E
+	text-align: center;
+	margin-top: 67px;
 }
 footer {
 	height: 40px;
