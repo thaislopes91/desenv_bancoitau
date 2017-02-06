@@ -1,3 +1,4 @@
+/*Tabela que guarda as informacoes do cliente*/
 CREATE TABLE tb_clientes (
 	id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     nome varchar(200),
@@ -15,11 +16,14 @@ CREATE TABLE tb_clientes (
     nomearquivo varchar(100)
 )
 
+
 select * from tb_clientes
+
 
 /*CALL p_clientes_save('Thais','ta@im.com.br','123','2012-10-28','123344','05348554820','Rua Gironda','Jardim Paulista','01435040','São Paulo','SP','download/Teste para Desenvolvedor Jr.doc','Teste para Desenvolvedor Jr.doc')*/
 /*CALL p_clientes_save('Patricia','p@i.com.br','123','2014-10-04','232','093903902929','Rua Gironda','Jardim Paulista','01435040','São Paulo','SP','download/1520763_632785596812616_3914194704563299780_n.jpg','1520763_632785596812616_3914194704563299780_n.jpg')*/
 
+/*Procedure que insere as informacoes do cliente*/
 DELIMITER &&
 CREATE PROCEDURE p_clientes_save ( in
 	nome varchar(200),
@@ -45,7 +49,7 @@ BEGIN
 END
 
 
- 
+/*Procedure que edita as informacoes do cliente*/
 DELIMITER &&
 CREATE PROCEDURE p_clientes_edit ( in
 	nrid int,
