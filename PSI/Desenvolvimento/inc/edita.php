@@ -25,8 +25,8 @@ $sql = new SQL();
 if($file["name"] != ""){
 
 	if(move_uploaded_file($file["tmp_name"], $pastadestino)){
-		$resultado = $sql->query("CALL p_clientes_edit($id,'$nome','$email','$senha','$nascimento','$rg','$cpf','$endereco','$bairro','$cep','$cidade','$estado','$pastadestino','$nomearquivonew')");
-		header("Location: ../view/acesso.php");exit;
+		$resultado = $sql->query("CALL p_clientes_edit($id,'$nome','$email','$senha','$nascimento','$rg','$cpf','$endereco','$bairro','$cep','$cidade','$estado','$pastadestino','$nomearquivonew')"); 
+		header("Location: ../view/respostaok.php");exit;
 	}
 	else{
 		header("Location: ../view/index.php");exit;
@@ -34,7 +34,7 @@ if($file["name"] != ""){
 }
 else{
 	$resultado = $sql->query("CALL p_clientes_edit($id,'$nome','$email','$senha','$nascimento','$rg','$cpf','$endereco','$bairro','$cep','$cidade','$estado','$caminhoarquivo','$nomearquivo')");
-	header("Location: ../view/acesso.php");exit;
+	header("Location: ../view/respostaok.php");exit;
 }
 
 

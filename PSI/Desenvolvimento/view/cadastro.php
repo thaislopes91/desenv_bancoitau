@@ -38,11 +38,11 @@
 			</div>				
 			<div class="form-group">
 				<label for="rg">RG</label>
-				<input type="text" name="rg" id="rg" class="form-control" required></input>
+				<input type="text" name="rg" id="rg" class="form-control" maxlength="10" required></input>
 			</div>
 			<div class="form-group">
 				<label for="cpf">CPF</label>
-				<input type="number" name="cpf" id="cpf" class="form-control" maxlength="11" required></input>
+				<input type="text" name="cpf" id="cpf" class="form-control" maxlength="11" required></input>
 			</div>
 			<div class="form-group">
 				<label for="endereco">Endereço</label>
@@ -54,7 +54,7 @@
 			</div>
 			<div class="form-group">
 				<label for="cep">CEP</label>
-				<input type="text" name="cep" id="cep" class="form-control" required></input>
+				<input type="text" name="cep" id="cep" class="form-control" maxlength="7" required></input>
 			</div>
 			<div class="form-group">
 				<label for="cidade">Cidade</label>

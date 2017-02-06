@@ -62,8 +62,7 @@
 				
 			<div class="container">
 				
-				<a href="#" class="pull-left">Politica de Privacidade</a>
-				<a href="#" class="pull-left">Segurança</a>
+				<a href="privacidade.php" class="pull-left">Politica de Privacidade</a>
 				<a href="tel:1138765432" name="contato" class="pull-right">Contato:(11) 3876-5432</a></p>
 
 			</div>
@@ -74,12 +73,6 @@
 
 	<script src="../lib/jquery/jquery.min.js"></script>
 	<script src="../lib/bootstrap/js/bootstrap.min.js"></script>
-	<script>
-		$(document).ready(function() {
-
-					
-		});
-	</script>
 	
 </body>
 </html>

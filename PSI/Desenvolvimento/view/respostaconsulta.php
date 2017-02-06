@@ -7,7 +7,7 @@
 
 <div class="container">
 	<h4>Dados Pessoais</h4>
-	<form method="POST" action="../inc/edita.php" enctype="multipart/form-data">
+	<form method="POST" action="../inc/edita.php" enctype="multipart/form-data" id="formdata">
 		<div class="form-group">
 			<label for="nome">Nome Completo</label>
 			<input type="text" name="nome" id="nome" class="form-control" required value="<?=$data['nome']?>"></input>
@@ -36,11 +36,11 @@
 		</div>				
 		<div class="form-group">
 			<label for="rg">RG</label>
-			<input type="text" name="rg" id="rg" class="form-control" required value="<?=$data['rg']?>"></input>
+			<input type="text" name="rg" id="rg" class="form-control" maxlength="10" required value="<?=$data['rg']?>"></input>
 		</div>
 		<div class="form-group">
 			<label for="cpf">CPF</label>
-			<input type="number" name="cpf" id="cpf" class="form-control" maxlength="11" required value="<?=$data['cpf']?>" readonly></input>
+			<input type="text" name="cpf" id="cpf" class="form-control" maxlength="11" required value="<?=$data['cpf']?>" readonly></input>
 		</div>
 		<div class="form-group">
 			<label for="endereco">Endereço</label>
@@ -52,7 +52,7 @@
 		</div>
 		<div class="form-group">
 			<label for="cep">CEP</label>
-			<input type="text" name="cep" id="cep" class="form-control" required value="<?=$data['cep']?>"></input>
+			<input type="text" name="cep" id="cep" class="form-control" maxlength="7" required value="<?=$data['cep']?>"></input>
 		</div>
 		<div class="form-group">
 			<label for="cidade">Cidade</label>
