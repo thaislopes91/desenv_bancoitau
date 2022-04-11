@@ -35,7 +35,7 @@
 		            </div>
 	          	</li>
 				<li class="nav-item active"><a class="nav-link" href="#sobre">Sobre</a></li>
-				<li class="nav-item active"><a class="nav-link" href="#">Contato</a></li>
+				<li class="nav-item active"><a class="nav-link" href="#contato">Contato</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -97,7 +97,41 @@
 		</div>
 	</div>
 	<div class="container" id="sobre">
-		<p>Sobre</p>
+		<div class="row">
+			<h3>Sobre</h3>
+		</div>
+		<div class="row">
+			<p>De 2017 até hoje, existe uma grande luta para que a Casa de Amor continue a salvar a vida de animais indefesos. Tivemos um grande patrocínio inicial muito importante, que possibilitou o crescimento da Casa tão rapidamente e fez com que pudessemos ajudar tantos animais em tão pouco tempo.</p>
+			<p>Mais de 5.000 animais já foram resgatados de maus tratos, abandono e etc. E saber desse número é o que nos motiva a continuar esse trabalho que requer tanto carinho e cuidado.</p>
+			<p> E a luta continua! Temos ainda muito trabalho a fazer, e o grande sonho de nossa mentora Celine Pedrosa é que possamos atuar em mais cidades do Brasil, abranger cada vez mais os tipos de animais, e dar o tratamento necessário para cada raça.</p>
+		</div>
+	</div>
+	<div class="container" id="contato">
+		<div class="row">
+			<h3>Contato</h3>
+		</div>
+		<form>
+			<!-- <div class="row"> -->
+				<div class="col-md-6">
+					<label for="nomepessoa">Nome</label>
+					<input type="text" class="form-control" name="nome">
+				</div>
+				<div class="col-md-6">
+					<label for="emailpessoa">Email</label>
+					<input type="email" class="form-control" name="emailpessoa">
+				</div>
+				<div class="col-md-6">
+					<label for="telefonepessoa">Telefone</label>
+					<input type="tel" class="form-control" id="telefonepessoa" name="telefonepessoa" tabindex="3" maxlength="15" mask-re=>
+				</div>
+				<div class="col-md-6">
+					<label for="mensagempessoa">Mensagem</label>
+					<textarea class="form-control" name="mensagempessoa" placeholder="Deixe aqui sua mensagem" maxlength="500"></textarea>
+				</div>
+					<button type="submit" class="btn btn-primary btn-block" style="position: relative;">Enviar</button>
+
+			<!-- </div> -->
+		</form>		
 	</div>
 </main>
 <footer class="container">Casa de Amor aos Animais Ltda 2018</footer>
@@ -107,5 +141,8 @@
 <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<script type="text/javascript">
+	$('#telefonepessoa').mask("(00) 0000-0000");
+</script>
 </body>
 </html>
